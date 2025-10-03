@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place an Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Place an Order</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="form.html">Place Order</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Order Form</h2>
+    <form onsubmit="return validateForm()">
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="service">Select Service:</label><br>
+      <select id="service" name="service" required>
+        <option value="">--Choose a service--</option>
+        <option value="webdesign">Web Design</option>
+        <option value="development">Web Development</option>
+        <option value="consulting">Consulting</option>
+      </select><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
